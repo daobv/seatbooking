@@ -1,0 +1,18 @@
+2014/08/17 23:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /var/www/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/framework/web/CController.php(270): CController->missingAction('about')
+#1 /var/www/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/seatbooking/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+---
+2014/08/17 23:32:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/seatbooking/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/gii
+---
